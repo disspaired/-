@@ -1,0 +1,34 @@
+using System.Collections.Specialized;
+
+int A;
+
+
+
+Console.Write("Введите число N: ");
+int.TryParse(Console.ReadLine(), out A);
+
+int factorial = 1;
+int sumFactorials = 0;
+
+for (int i = 1; i <= A; i++)
+{
+    factorial *= i;
+
+    sumFactorials += factorial;
+}
+
+Console.WriteLine(sumFactorials);
+
+int N;
+
+Console.Write("Введите число: ");
+int.TryParse(Console.ReadLine(), out N);
+
+int factrorial = 1;
+
+for (int i = 1; i <= N; i++)
+{
+    factrorial *= i;
+}
+
+Console.WriteLine(factrorial);
